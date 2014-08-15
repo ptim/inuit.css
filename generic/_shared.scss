@@ -18,7 +18,9 @@ pre,
 /**
  * Objects and abstractions
  */
-%sass-margin-bottom,
+// silent mixin breaks libsass (in this case)
+// http://benfrain.com/libsass-lightning-fast-sass-compiler-ready-prime-time/
+// %sass-margin-bottom,
 .media,
 .island,
 .islet{
