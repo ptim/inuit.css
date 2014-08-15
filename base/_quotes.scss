@@ -4,10 +4,13 @@
 /**
  * If English quotes are set in `_vars.scss`, define them here.
  */
-@if $english-quotes == true{
-    $open-quote:    \201C !global;
-    $close-quote:   \201D !global;
-}
+// !global is unsupported by libsass
+// Breaks on Sass 3.3 "!global" syntax
+// https://github.com/sass/libsass/issues/278
+// @if $english-quotes == true{
+//     $open-quote:    \201C !global;
+//     $close-quote:   \201D !global;
+// }
 
 
 /**
